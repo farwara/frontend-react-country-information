@@ -2,9 +2,28 @@ import { useState } from "react";
 import axios from "axios";
 import worldMap from "./assets/world_map.png";
 import "./App.css";
+import { Routes, Route, Link } from "react-router-dom";
+import CountriesOverview from "./pages/CountriesOverview";
+import CountrySearch from "./pages/CountrySearch";
+
 
 function App() {
-    /* -------------------- STATE -------------------- */
+    function App() {
+        return (
+            <>
+                <nav>
+                    <Link to="/">Overview</Link> |{" "}
+                    <Link to="/search">Search</Link>
+                </nav>
+
+                <Routes>
+                    <Route path="/" element={<CountriesOverview />} />
+                    <Route path="/search" element={<CountrySearch />} />
+                </Routes>
+            </>
+        );
+    }
+
     const [countries, setCountries] = useState([]);
     const [showButton, setShowButton] = useState(true);
 
