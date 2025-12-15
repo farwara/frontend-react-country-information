@@ -1,0 +1,53 @@
+.app {
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.world-map {
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.country-list {
+    list-style: none;
+    padding: 0;
+}
+
+.country-item {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+}
+
+.flag {
+    width: 40px;
+}
+
+.flag-large {
+    width: 80px;
+}
+
+.blue { color: blue; }
+.green { color: green; }
+.red { color: red; }
+.yellow { color: goldenrod; }
+.purple { color: purple; }
+.grey { color: grey; }
+
+.search-section {
+    margin-top: 2rem;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.country-detail {
+    margin-top: 1rem;
+}
